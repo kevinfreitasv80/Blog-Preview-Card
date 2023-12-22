@@ -44,7 +44,7 @@ span{
 time{
     font-weight: 400;
 }
-h1, h4, span{
+h1, h3, span{
     font-weight: 800;
 }
 h1{
@@ -66,6 +66,10 @@ p{
 .avatar{
     width: 2em;
     margin-right: 1em;
+}
+h3{
+    font-size: 1em;
+    margin: 0;
 }
 @media screen and (max-width: 26.25em) {
     main{
