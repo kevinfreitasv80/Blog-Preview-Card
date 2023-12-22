@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap');
+:root{
+    --yellow: #F4D04E;
+    --black: #000;
+    --white: #fff;
+    --colorText: #808080;
+}
+body{
+    font-family: "Figtree", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1, main{
+    transition: .4s;
+}
+.illustration{
+    border-radius: .5em;
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    padding: 1.5em;
+    border-radius: 1em;
+    border: .0625em solid var(--black);
+    box-shadow: .5em .5em 0 var(--black);
+}
+main:hover{
+    box-shadow: 1em 1em 0 var(--black);
+}
+span, body{
+    background: var(--yellow);
+}
+span{
+    font-size: .9em;
+    display: block;
+    max-width: 4em;
+    padding: .4em 1em;
+    border-radius: .4em;
+    margin: 1em 0;
+}
+time{
+    font-weight: 400;
+}
+h1, h4, span{
+    font-weight: 800;
+}
+h1{
+    font-size: 1.5em;
+}
+h1:hover{
+    cursor: pointer;
+    color: var(--yellow);
+}
+p{
+    color: var(--colorText);
+    max-width: 20em;
+    line-height: 1.5em;
+}
+.articleAvatar{
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    width: 2em;
+    margin-right: 1em;
+}
+@media screen and (max-width: 26.25em) {
+    main{
+        width: 70%;
+    }
+    .illustration{
+        width: 100%;
+    }
+}
